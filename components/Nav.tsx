@@ -16,8 +16,7 @@ const Nav = ({openNav}: Props) => {
             <div className='nav-link'>Home</div>
             <div className='nav-link'>About</div>
             <div className='nav-link'>Services</div>
-            <div className='nav-link'>Project</div>
-            <div className='nav-link'>Blog</div>
+            <div className='nav-link'>Projects</div>
             <div className='nav-link'>Contact</div>
             <div onClick={openNav}>
                 <Bars3Icon className='w-[2rem] md:hidden h-8 cursor-pointer text-yellow-300'/>
