@@ -1,6 +1,7 @@
 import { ArrowDownTrayIcon } from '@heroicons/react/20/solid'
 import Image from 'next/image'
 import React from 'react'
+import ResumeButton from './ResumeButton'
 
 const About = () => {
   return (
@@ -19,10 +20,7 @@ const About = () => {
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod unde aut porro distinctio nulla eum architecto pariatur repellat maiores totam facilis, laboriosam mollitia. Totam voluptas, dolorem consequuntur illo odit esse!
                     </p>
                 </div>
-                <button className='px-8 hover:bg-yellow-400 transition-all duration-200 py-4 text-[18px] font-bold uppercase bg-[#55e6a5] text-black flex items-center space-x-2'>
-                    <p> Download CV</p>
-                    <ArrowDownTrayIcon className='w-[1.6rem]h-[1.7rem] text-black'/>
-                </button>
+                <ResumeButton />
             </div>
             <div data-aos="fade-left" className='lg:w-[500px] mx-auto md:mx-0 mt-8 lg:mt-0 lg:h-[500px] w-[300px] h-[300px] relative'>
                 <Image src= "/images/about.jpg" alt='user' layout='fill' objectFit='contain' className='relative z-[11] w-full h-full object-contain'/>
