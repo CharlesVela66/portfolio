@@ -17,7 +17,7 @@ const About = () => {
                 <div className='mb-12 flex items-center md:space-x-10'>
                     <span className='w-[100px] hidden md:block h-[5px] bg-slate-400 rounded-sm'></span>
                     <p className='text-[19px] text-slate-300 w-4/5'>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod unde aut porro distinctio nulla eum architecto pariatur repellat maiores totam facilis, laboriosam mollitia. Totam voluptas, dolorem consequuntur illo odit esse!
+                        I have experience in building great systems for web and mobile applications by following agile methodologies such as Scrum for more than one year. Also I have been into videogame development since 2021. 
                     </p>
                 </div>
                 <ResumeButton />
