@@ -23,7 +23,7 @@ export const navItems = [
 
 export const calculateSizes = (isSmall, isMobile, isTablet) => {
   return {
-    lighstaberScale: isSmall ? 1 : isMobile ? 1 : isTablet ? 1.2 : 1.9,
+    lighstaberScale: isSmall ? 0.7 : isMobile ? 0.7 : isTablet ? 1.2 : 1.9,
     lighstaberPosition: isSmall
       ? [-1.1, -1.3, 0]
       : isMobile

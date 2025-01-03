@@ -11,7 +11,7 @@ const NavItems = () => {
           </a>
         </li>
       ))}
-      <li className="nav-li">
+      <li className="nav-li sm:block hidden">
         <a
           href="/files/CV_CARLOSVELASCO.pdf"
           className="nav-li_a flex items-center justify-center"
@@ -42,7 +42,7 @@ const Navbar = () => {
             href="/"
             className="text-neutral-400 font-bold text-xl hover:text-white transition-colors"
           >
-            <img src="/favicon.png" className="w-16 h-16" />
+            <img src="/favicon.png" className="w-10 h-10" />
           </a>
           <button
             onClick={toggleMenu}
