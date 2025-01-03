@@ -76,7 +76,7 @@ const About = () => {
                 I work remotely accross most timezones.
               </p>
               <p className="grid-subtext">
-                I&apos;m based in Queretaro, Mexico with remove work available.
+                I&apos;m based in Queretaro, Mexico with remote work available.
               </p>
               <Button
                 name="Contact me"
