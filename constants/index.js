@@ -151,8 +151,8 @@ export const myProjects = [
     ],
   },
   {
-    title: 'Mi Segunda Chamba',
-    desc: 'Welcome to Mi Segunda Chamba, the captivating podcast hosted by AJ Bauer that delves deep into the world of sports betting. Our mission was to craft a dynamic web application that empowers individuals to share their betting insights within the context of the most pivotal games of the moment.',
+    title: 'Mi $egunda Chamba',
+    desc: 'Welcome to Mi $egunda Chamba, the captivating podcast hosted by AJ Bauer that delves deep into the world of sports betting. Our mission was to craft a dynamic web application that empowers individuals to share their betting insights within the context of the most pivotal games of the moment.',
     subdesc:
       'For the development, we used Next.js, a powerful React framework for creating comprehensive web apps, allowing for simple development, optimal performance, and effective SEO-friendly rendering. Additionally, we utilized Tailwind CSS to streamline the process.',
     href: 'https://ajbauer.vercel.app/',
