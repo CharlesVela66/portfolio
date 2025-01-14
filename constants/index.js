@@ -27,10 +27,10 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
     lighstaberPosition: isSmall
       ? [-1.1, -1.3, 0]
       : isMobile
-        ? [-1.1, -3.7, 0]
-        : isTablet
-          ? [-1.1, -3.7, 0]
-          : [-2, -3.3, 0],
+      ? [-1.1, -3.7, 0]
+      : isTablet
+      ? [-1.1, -3.7, 0]
+      : [-2, -3.3, 0],
   };
 };
 
@@ -127,6 +127,43 @@ export const myProjects = [
       boxShadow: '0px 0px 60px 0px #2F67B64D',
     },
     spotlight: '/assets/spotlight4.png',
+    tags: [
+      {
+        id: 1,
+        name: 'Next.js',
+        path: '/assets/nextjs.svg',
+      },
+      {
+        id: 2,
+        name: 'TailwindCSS',
+        path: 'assets/tailwindcss.png',
+      },
+      {
+        id: 3,
+        name: 'TypeScript',
+        path: '/assets/typescript.png',
+      },
+      {
+        id: 4,
+        name: 'ShadCN',
+        path: '/assets/shadcn.svg',
+      },
+    ],
+  },
+  {
+    title: 'Mi Segunda Chamba',
+    desc: 'Welcome to Mi Segunda Chamba, the captivating podcast hosted by AJ Bauer that delves deep into the world of sports betting. Our mission was to craft a dynamic web application that empowers individuals to share their betting insights within the context of the most pivotal games of the moment.',
+    subdesc:
+      'For the development, we used Next.js, a powerful React framework for creating comprehensive web apps, allowing for simple development, optimal performance, and effective SEO-friendly rendering. Additionally, we utilized Tailwind CSS to streamline the process.',
+    href: 'https://ajbauer.vercel.app/',
+    texture: '/textures/project/Mi $egunda Chamba.mp4',
+    logo: '/assets/project-logo1.png',
+    logoStyle: {
+      backgroundColor: '#fff233',
+      border: '0.2px solid #b9ae00',
+      boxShadow: '0px 0px 60px 0px #c4bc33',
+    },
+    spotlight: '/assets/spotlight1.png',
     tags: [
       {
         id: 1,
