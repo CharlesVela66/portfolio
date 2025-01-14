@@ -39,7 +39,9 @@ const Footer = () => {
           <img src="/assets/github.svg" className="w-1/2 h-1/2" alt="github" />
         </a>
       </div>
-      <p className="text-white-500">2025, Carlos, V. All rights reserved</p>
+      <p className="text-white-500">
+        {new Date().getFullYear()}, Carlos, V. All rights reserved
+      </p>
     </section>
   );
 };
