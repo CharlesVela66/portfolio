@@ -227,11 +227,21 @@ export const clientReviews = [
 export const workExperiences = [
   {
     id: 1,
+    name: 'Vertikal X',
+    pos: 'Full Stack Developer Lead',
+    duration: 'Mar 2025 - Jun 2025',
+    title:
+      "As the lead developer on a web platform for athletes to receive donations for upcoming competitions, I drive both frontend and backend development using Next.js and Nest.js. My role spans across engineering, team coordination, and product strategy—I act as Scrum Master and Product Owner, ensuring smooth sprint planning, team alignment, and consistent stakeholder communication. I'm also experienced in API integration and management, particularly with Instagram and Strava, enabling seamless data retrieval from athletes' profiles to enrich the platform experience.",
+    icon: '/assets/vtx.jpg',
+    animation: 'victory',
+  },
+  {
+    id: 2,
     name: 'Kellanova',
     pos: 'Data Governance & Data Analyst Intern',
     duration: 'Apr 2024 - Dec 2024',
     title:
-      "Led the development of a metadata dashboard to enhance the visibility and management of Data Sets, improving resource allocation across teams. Co-led the Data Ownership and Stewardship initiative, defining key roles and providing control tools to empower company leaders in data management. Created politics and processes to define the company's way of working.",
+      "Led the development of a Power BI metadata dashboard to improve the visibility and management of data sets, enabling better resource allocation across teams. Collaborated with stakeholders to define and implement data ownership and stewardship models, equipping company leaders with clear roles and governance tools.\nDuring my internship, I also contributed to defining data governance policies and processes, shaping the company's Way of Working (WoW). On the technical side, I used AWS to retrieve and manage large-scale datasets, and built automated Python scripts to validate data quality and streamline workflows.",
     icon: '/assets/Kellanova.svg',
     animation: 'victory',
   },
