@@ -223,7 +223,6 @@ export const clientReviews = [
       'Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
   },
 ];
-
 export const workExperiences = [
   {
     id: 1,
@@ -231,7 +230,7 @@ export const workExperiences = [
     pos: 'Full Stack Developer Lead',
     duration: 'Mar 2025 - Jun 2025',
     title:
-      "As the lead developer on a web platform for athletes to receive donations for upcoming competitions, I drive both frontend and backend development using Next.js and Nest.js. My role spans across engineering, team coordination, and product strategy—I act as Scrum Master and Product Owner, ensuring smooth sprint planning, team alignment, and consistent stakeholder communication. I'm also experienced in API integration and management, particularly with Instagram and Strava, enabling seamless data retrieval from athletes' profiles to enrich the platform experience.",
+      "As the lead developer on a web platform for athletes to receive donations for upcoming competitions, I drive both frontend and backend development using Next.js and Nest.js. I'm especially focused on crafting an intuitive and engaging UX/UI, ensuring the platform is both functional and user-friendly. \n\nMy role spans across engineering, team coordination, and product strategy—I act as Scrum Master and Product Owner, ensuring smooth sprint planning, team alignment, and consistent stakeholder communication. I'm also experienced in API integration and management, particularly with Instagram and Strava, enabling seamless data retrieval from athletes' profiles to enrich the platform experience.",
     icon: '/assets/vtx.jpg',
     animation: 'victory',
   },
