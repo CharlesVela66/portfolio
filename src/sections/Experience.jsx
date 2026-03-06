@@ -3,9 +3,7 @@ import { Canvas } from '@react-three/fiber';
 import { Suspense } from 'react';
 import CanvasLoader from '../components/CanvasLoader';
 import { workExperiences } from '../../constants';
-import Developer from '../components/Developer';
 import XWing from '../components/XWing';
-import { mx_bilerp_0 } from 'three/src/nodes/materialx/lib/mx_noise.js';
 
 const Experience = () => {
   return (

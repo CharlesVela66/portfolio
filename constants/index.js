@@ -36,6 +36,45 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 
 export const myProjects = [
   {
+    title: 'QommAdd',
+    desc: 'QommAdd is a community and activity management platform that allows organizations — such as gyms, studios, clubs, or event companies — to manage and monetize their events, recurring group activities, venues, and memberships all in one place.',
+    subdesc:
+      'Think of it as a platform sitting somewhere between Mindbody (class/studio management), Eventbrite (event ticketing), and Skool (community) — tailored for organizations that need all three in a single product.',
+    href: 'https://qommadd.com',
+    texture: '/textures/project/StoreAdd.mp4',
+    logo: '/assets/q.png',
+    logoStyle: {
+      backgroundColor: '#ADADFF',
+      background:
+        'linear-gradient(0deg, #ADADFF, #ADADFF), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
+      border: '0.2px solid rgba(63, 59, 255, 0.3)',
+      boxShadow: '0px 0px 60px 0px rgba(63, 59, 255, 0.3)',
+    },
+    spotlight: '/assets/spotlight1.png',
+    tags: [
+      {
+        id: 1,
+        name: 'Next.js',
+        path: '/assets/nextjs.svg',
+      },
+      {
+        id: 2,
+        name: 'TailwindCSS',
+        path: 'assets/tailwindcss.png',
+      },
+      {
+        id: 3,
+        name: 'TypeScript',
+        path: '/assets/typescript.png',
+      },
+      {
+        id: 4,
+        name: 'ShadCN',
+        path: '/assets/shadcn.svg',
+      },
+    ],
+  },
+  {
     title: 'StoreIt - Modern Storage Mangement Platform',
     desc: 'A modern storage management platform built for simplicity, functionality, and security. With StoreIt you can upload your files effortlessly, preview, edit and share them with your friends. You can stay organized with streamlined dashboard to track storage usage and recent upload. Also, OTP authentication was implemented for ultimate safety. ',
     subdesc:
@@ -226,16 +265,26 @@ export const clientReviews = [
 export const workExperiences = [
   {
     id: 1,
+    name: 'QommAdd',
+    pos: 'Founding Full Stack Developer',
+    duration: 'Aug 2025 - Currently',
+    title:
+      "• Built and shipped the company's core web platform as the sole software engineer using Next.js and SQL\n• Designed and implemented the full database architecture and backend integrations\n• Led end-to-end deployments using Vercel, ensuring reliability and fast iteration\n• Owned UX/UI and mobile-first design, collaborating closely with business stakeholders\n• Integrated Stripe APIs for payments, subscriptions, onboarding, and webhook automation\n• Participated in product and business decisions, analytics tracking, and admin tooling",
+    icon: '/assets/q.png',
+    animation: 'victory',
+  },
+  {
+    id: 2,
     name: 'Vertikal X',
     pos: 'Full Stack Developer Lead',
-    duration: 'Mar 2025 - Jun 2025',
+    duration: 'Mar 2025 - Aug 2025',
     title:
       "As the lead developer on a web platform for athletes to receive donations for upcoming competitions, I drive both frontend and backend development using Next.js and Nest.js. I'm especially focused on crafting an intuitive and engaging UX/UI, ensuring the platform is both functional and user-friendly. \n\nMy role spans across engineering, team coordination, and product strategy—I act as Scrum Master and Product Owner, ensuring smooth sprint planning, team alignment, and consistent stakeholder communication. I'm also experienced in API integration and management, particularly with Instagram and Strava, enabling seamless data retrieval from athletes' profiles to enrich the platform experience.",
     icon: '/assets/vtx.jpg',
     animation: 'victory',
   },
   {
-    id: 2,
+    id: 3,
     name: 'Kellanova',
     pos: 'Data Governance & Data Analyst Intern',
     duration: 'Apr 2024 - Dec 2024',
@@ -264,23 +313,23 @@ export const Technologies = [
   },
   {
     id: 4,
-    name: 'JavaScript',
-    logo: '/assets/javascript.svg',
+    name: 'Nest.Js',
+    logo: '/assets/nestjs.svg',
   },
   {
     id: 5,
+    name: 'PostgreSQL',
+    logo: '/assets/postgres.svg',
+  },
+  {
+    id: 6,
     name: 'Python',
     logo: '/assets/python.svg',
   },
   {
-    id: 6,
-    name: 'PyTorch',
-    logo: '/assets/pytorch.svg',
-  },
-  {
     id: 7,
-    name: 'TensorFlow',
-    logo: '/assets/tensorflow.svg',
+    name: 'Figma',
+    logo: '/assets/figma.svg',
   },
   {
     id: 8,
@@ -289,8 +338,8 @@ export const Technologies = [
   },
   {
     id: 9,
-    name: 'C++',
-    logo: '/assets/cpp.svg',
+    name: 'Node.Js',
+    logo: '/assets/node.svg',
   },
 ];
 

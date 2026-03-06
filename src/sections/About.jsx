@@ -27,7 +27,7 @@ const About = () => {
             <div>
               <p className="grid-headtext">Hi, I&apos;m Carlos</p>
               <p className="grid-subtext">
-                With 2 years of experience, I have honed my skills in frontend
+                With 3 years of experience, I have honed my skills in frontend
                 and backend development.
               </p>
             </div>
@@ -99,10 +99,7 @@ const About = () => {
                 My passion for software development
               </p>
               <p className="grid-subtext">
-                I love to solve real-life problems. As a Computer Science
-                student at Tecnológico de Monterrey, I&apos;ve gained experience
-                working with various companies and gained skills in Agile and
-                Disciplined Agile Delivery methodologies.
+                I&apos;m passionate about solving real-world problems through technology. As a graduate of Computer Science from Tecnológico de Monterrey, I&apos;ve gained hands-on experience collaborating with companies and building impactful software solutions. Currently, I work as a Founding Full-Stack Engineer, where I design and develop scalable products across the stack while contributing to technical and product decisions. I also have experience working within Agile and Disciplined Agile Delivery environments to deliver reliable, high-quality software.
               </p>
             </div>
           </div>
