@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <main className="px-20">
+      <main className="space-y-6">
         <Hero />
         <About />
         <Projects />

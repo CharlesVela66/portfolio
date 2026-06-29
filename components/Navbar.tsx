@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Navbar = () => {
   return (
     <nav className='flex justify-between px-20 py-6'>
