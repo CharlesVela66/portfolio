@@ -3,25 +3,43 @@ import { Field, FieldGroup, FieldLabel } from "./ui/field"
 import { Input } from "./ui/input"
 import { Textarea } from "./ui/textarea"
 import { Button } from "./ui/button"
-import { Send } from "lucide-react"
+import { Send, Mail } from "lucide-react"
+import { GithubIcon, LinkedinIcon } from "./BrandIcons"
+
+const SOCIAL_ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
+  mail: Mail,
+  linkedin: LinkedinIcon,
+  github: GithubIcon,
+}
 
 const Contact = () => {
   return (
-    <div className="bg-bg-secondary flex flex-row w-full px-20 py-10">
+    <div className="bg-bg-secondary flex flex-col md:flex-row w-full px-4 sm:px-10 md:px-20 py-10 gap-8" id="contact">
       <div className="w-full flex flex-col space-y-4">
         <h1 className="text-accent-main text-xl">Let&apos;s connect!</h1>
-        <h2 className="font-medium text-4xl">Got a project in mind?</h2>
-        <h3 className="font-medium text-3xl">Let&apos;s Talk!</h3>
+        <h2 className="font-medium text-3xl md:text-4xl">Got a project in mind?</h2>
+        <h3 className="font-medium text-2xl md:text-3xl">Let&apos;s Talk!</h3>
         <p>Whether you&apos;re looking for a full-stack developer, a technical lead, or just want to say hi. My inbox is open.</p>
         <div className="mt-2 space-y-4">
-          {SOCIALS.map((social, index) => (
-            <div key={index} className="flex flex-row gap-3">
-              {social.value}
-            </div>
-          ))}
+          {SOCIALS.map((social, index) => {
+            const Icon = SOCIAL_ICONS[social.icon]
+            const href = social.icon === "mail" ? `mailto:${social.value}` : social.value
+            return (
+              <a
+                key={index}
+                href={href}
+                target={social.icon === "mail" ? undefined : "_blank"}
+                rel={social.icon === "mail" ? undefined : "noopener noreferrer"}
+                className="flex flex-row items-center gap-3 hover:text-accent-main transition-colors"
+              >
+                {Icon && <Icon className="w-5 h-5" />}
+                {social.value}
+              </a>
+            )
+          })}
         </div>
       </div>
-      <div className="w-full rounded-lg bg-bg-main ml-20 p-8">
+      <div className="w-full rounded-lg bg-bg-main p-6 md:p-8">
         <FieldGroup className="space-y-0">
           <Field>
             <FieldLabel>Your name</FieldLabel>

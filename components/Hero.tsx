@@ -5,27 +5,28 @@ const labels = ['Next.Js', 'React', 'Typescript', 'PostgreSQL'];
 
 const Hero = () => {
   return (
-    <div className='w-full flex flex-row mt-5 px-20'>
-      <div className='w-2/3 space-y-2'>
-        <h1 className='text-3xl text-accent-dark font-medium'>Hello there 👋</h1>
-        <h2 className='text-7xl/tight tracking-wide'>I&apos;m Carlos Velasco, software engineer & full-stack developer</h2>
-        <p className='text-2xl font-normal'>Leading remote tech teams for 3 years, building end-to-end systems</p>
-        <div className='flex flex-row gap-3 mt-6'>
+    <div className='w-full flex flex-col-reverse md:flex-row mt-5 px-4 sm:px-10 md:px-20 gap-8'>
+      <div className='w-full md:w-2/3 space-y-2'>
+        <h1 className='text-2xl sm:text-3xl text-accent-dark font-medium'>Hello there 👋</h1>
+        <h2 className='text-4xl sm:text-5xl md:text-7xl/tight tracking-wide'>I&apos;m Carlos Velasco, software engineer & full-stack developer</h2>
+        <p className='text-lg sm:text-xl md:text-2xl font-normal'>Leading remote tech teams for 3 years, building end-to-end systems</p>
+        <div className='flex flex-row flex-wrap gap-3 mt-6'>
           {labels.map((label, index) => (
-            <Chip 
+            <Chip
               key={index}
               label={label}
             />
           ))}
         </div>
       </div>
-      <div className='w-1/3 flex items-center justify-center'>
-        <Image 
+      <div className='w-full md:w-1/3 flex items-center justify-center'>
+        <Image
           src="/images/profile_picture.png"
           height={450}
           width={450}
           alt='profile picture'
-          className='rounded-full'
+          loading='eager'
+          className='rounded-full w-48 h-48 sm:w-64 sm:h-64 md:w-112.5 md:h-112.5'
         />
       </div>
     </div>

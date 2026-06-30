@@ -2,7 +2,7 @@ import SimpleCard from './SimpleCard'
 
 const About = () => {
   return (
-    <div className='bg-bg-secondary w-full px-20 py-10 flex flex-row justify-between gap-8'>
+    <div className='bg-bg-secondary w-full px-4 sm:px-10 md:px-20 py-10 flex flex-col md:flex-row justify-between gap-8' id='about'>
       <div className='w-full flex flex-col space-y-2'>
         <h2 className='text-xl text-muted'>Who I am</h2>
         <SimpleCard 
