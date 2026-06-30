@@ -5,7 +5,7 @@ const labels = ['Next.Js', 'React', 'Typescript', 'PostgreSQL'];
 
 const Hero = () => {
   return (
-    <div className='w-full flex flex-col-reverse md:flex-row mt-5 px-4 sm:px-10 md:px-20 gap-8'>
+    <div className='w-full flex flex-col-reverse md:flex-row mt-5 px-4 sm:px-10 md:px-20 gap-8' id="">
       <div className='w-full md:w-2/3 space-y-2'>
         <h1 className='text-2xl sm:text-3xl text-accent-dark font-medium'>Hello there 👋</h1>
         <h2 className='text-4xl sm:text-5xl md:text-7xl/tight tracking-wide'>I&apos;m Carlos Velasco, software engineer & full-stack developer</h2>
@@ -20,14 +20,15 @@ const Hero = () => {
         </div>
       </div>
       <div className='w-full md:w-1/3 flex items-center justify-center'>
-        <Image
-          src="/images/profile_picture.png"
-          height={450}
-          width={450}
-          alt='profile picture'
-          loading='eager'
-          className='rounded-full w-48 h-48 sm:w-64 sm:h-64 md:w-112.5 md:h-112.5'
-        />
+        <div className='relative size-40 sm:size-56 md:size-96 rounded-full overflow-hidden shrink-0'>
+          <Image
+            src="/images/profile_picture.png"
+            fill
+            alt='profile picture'
+            loading='eager'
+            className='object-cover'
+          />
+        </div>
       </div>
     </div>
   )

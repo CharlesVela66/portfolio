@@ -65,7 +65,7 @@ const Contact = () => {
             />
           </Field>
           <Field className="mt-2">
-            <Button type="submit" className="flex flex-row gap-1 bg-text text-bg-main p-4 w-fit! self-end">
+            <Button type="submit" className="flex flex-row gap-1 bg-text text-bg-main p-4 w-fit! self-end cursor-pointer">
               Send message
               <Send className="w-4 h-4"/>
             </Button>

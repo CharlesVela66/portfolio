@@ -11,7 +11,7 @@ interface ProjectCardProps {
 const ProjectCard = ({project}: ProjectCardProps) => {
   return (
     <div className="w-full flex flex-col md:flex-row rounded-xl gap-3 border border-border overflow-hidden">
-        <div className="relative w-full h-55 sm:h-70 md:h-92.5 md:w-1/3 shrink-0">
+        <div className="relative w-full h-55 sm:h-70 md:h-92.5 lg:w-1/2 md:w-2/5 shrink-0">
             <Image
                 src={project.image}
                 fill

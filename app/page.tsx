@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <main className="space-y-6">
+      <main className="space-y-6 pt-20">
         <FadeIn>
           <Hero />
         </FadeIn>
