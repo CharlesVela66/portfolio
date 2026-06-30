@@ -24,7 +24,7 @@ const Hero = () => {
           <Image
             src="/images/profile_picture.png"
             fill
-            alt='profile picture'
+            alt='Carlos Velasco, software engineer'
             loading='eager'
             className='object-cover'
           />

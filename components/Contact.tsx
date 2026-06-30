@@ -1,10 +1,7 @@
 import { SOCIALS } from "@/constants/constants"
-import { Field, FieldGroup, FieldLabel } from "./ui/field"
-import { Input } from "./ui/input"
-import { Textarea } from "./ui/textarea"
-import { Button } from "./ui/button"
-import { Send, Mail } from "lucide-react"
+import { Mail } from "lucide-react"
 import { GithubIcon, LinkedinIcon } from "./BrandIcons"
+import ContactForm from "./ContactForm"
 
 const SOCIAL_ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
   mail: Mail,
@@ -16,8 +13,8 @@ const Contact = () => {
   return (
     <div className="bg-bg-secondary flex flex-col md:flex-row w-full px-4 sm:px-10 md:px-20 py-10 gap-8" id="contact">
       <div className="w-full flex flex-col space-y-4">
-        <h1 className="text-accent-main text-xl">Let&apos;s connect!</h1>
-        <h2 className="font-medium text-3xl md:text-4xl">Got a project in mind?</h2>
+        <p className="text-accent-main text-xl">Let&apos;s connect!</p>
+        <h1 className="font-medium text-3xl md:text-4xl">Got a project in mind?</h1>
         <h3 className="font-medium text-2xl md:text-3xl">Let&apos;s Talk!</h3>
         <p>Whether you&apos;re looking for a full-stack developer, a technical lead, or just want to say hi. My inbox is open.</p>
         <div className="mt-2 space-y-4">
@@ -40,37 +37,7 @@ const Contact = () => {
         </div>
       </div>
       <div className="w-full rounded-lg bg-bg-main p-6 md:p-8">
-        <FieldGroup className="space-y-0">
-          <Field>
-            <FieldLabel>Your name</FieldLabel>
-            <Input 
-              type="text"
-              required
-              placeholder="John Doe"
-            />
-          </Field>
-          <Field>
-            <FieldLabel>Email address</FieldLabel>
-            <Input 
-              type="email"
-              required
-              placeholder="you@email.com"
-            />
-          </Field>
-          <Field>
-            <FieldLabel>Message</FieldLabel>
-            <Textarea 
-              required
-              placeholder="Hi Carlos, I&apos;d love to..."
-            />
-          </Field>
-          <Field className="mt-2">
-            <Button type="submit" className="flex flex-row gap-1 bg-text text-bg-main p-4 w-fit! self-end cursor-pointer">
-              Send message
-              <Send className="w-4 h-4"/>
-            </Button>
-          </Field>
-        </FieldGroup>
+        <ContactForm />
       </div>
     </div>
   )

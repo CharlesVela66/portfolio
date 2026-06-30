@@ -22,7 +22,7 @@ const ProjectCard = ({project}: ProjectCardProps) => {
         </div>
         <div className="flex flex-col px-6 py-3 w-full space-y-4">
             <div className="flex flex-col sm:flex-row sm:justify-between gap-1">
-                <h1 className="text-2xl font-semibold w-full">{project.title}</h1>
+                <h2 className="text-2xl font-semibold w-full">{project.title}</h2>
                 <p className="font-light text-md line whitespace-nowrap">{project.year}</p>
             </div>
             <p className='text-light font-normal'>{project.description}</p>
